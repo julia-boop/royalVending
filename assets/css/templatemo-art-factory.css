@@ -1188,6 +1188,30 @@ accordions
 
 /* 
 ---------------------------------------------
+clients
+--------------------------------------------- 
+*/
+
+.clients{
+  border-bottom: 1px solid #eee;
+  padding: 50px;
+}
+
+.clients-img{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.clients-img img {
+  margin: 10px;
+  width: 25%;
+  height: auto;
+}
+
+/* 
+---------------------------------------------
 contact
 --------------------------------------------- 
 */
@@ -1390,6 +1414,65 @@ footer .logo-footer{
     text-align: center;
     margin-top: 15px;
   }
+}
+
+/* 
+---------------------------------------------
+equipos
+--------------------------------------------- 
+*/
+
+.header-equipos{
+  height: 55vh!important;
+}
+
+.header-equipos h1{
+  margin-top: 140px;
+}
+
+.equipos{
+  margin: 0px!important;
+  justify-content: center;
+}
+
+.equipos div{
+  width: max-content;
+  margin: 20px;
+  border-radius: 5px;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.equipos div img {
+  width: 300px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.equipos div p{
+  text-align: center;
+  padding: 10px;
+}
+
+/* 
+---------------------------------------------
+detail
+--------------------------------------------- 
+*/
+
+#detail .detail-container{
+  margin: 0px!important;
+}
+
+#detail .detail-container img{
+  width: 550px;
+}
+
+.detail-img, .detail-text{
+  padding: 50px;
 }
 
 /* 

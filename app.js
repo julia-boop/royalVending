@@ -11,6 +11,14 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
+app.get('/equipos/:id', (req, res) => {
+    res.render('equipos')
+})
+
+app.get('/equipos/detail/:id', (req, res) => {
+    res.render('detail')
+})
+
 
 app.listen(process.env.PORT || 3000, () => {
     console.log("El servidor esta corriendo...")
