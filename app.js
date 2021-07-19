@@ -20,6 +20,6 @@ app.get('/equipos/detail/:id', (req, res) => {
 })
 
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(process.env.PORT || 3004, () => {
     console.log("El servidor esta corriendo...")
 })

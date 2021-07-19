@@ -1205,8 +1205,9 @@ clients
 }
 
 .clients-img img {
+  object-fit: scale-down;
   margin: 10px;
-  width: 25%;
+  max-width: 120px;
   height: auto;
 }
 
@@ -1468,12 +1469,28 @@ detail
 }
 
 #detail .detail-container img{
-  width: 550px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.detail-img{
+  width: 60%;
 }
 
 .detail-img, .detail-text{
   padding: 50px;
 }
+
+@media(max-width:580px){
+  .detail-img{
+    width: 100%;
+  }
+
+  .detail-img, .detail-text{
+    padding: 25px;
+  }
+}
+
 
 /* 
 ---------------------------------------------
