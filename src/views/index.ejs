@@ -20,7 +20,7 @@ https://templatemo.com/tm-537-art-factory
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="/css/templatemo-art-factory.css">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
     <link rel="stylesheet" type="text/css" href="/css/owl-carousel.css">
 
     </head>
@@ -253,17 +253,10 @@ https://templatemo.com/tm-537-art-factory
                         </div>
                     </div>
                     <div class="clients-img">
-                        <img src="/images/clients/agd.png" alt="" >
-                        <img src="/images/clients/argencred.png" alt="" >
-                        <img src="/images/clients/arsat.jpg" alt="" >
-                        <img src="/images/clients/ausur.jpg" alt="" >
-                        <img src="/images/clients/autobat.jpg" alt="" >
-                        <img src="/images/clients/bacs.png" alt="" >
-                        <img src="/images/clients/basf.jpg" alt="" >
-                        <img src="/images/clients/centralpuerto.png" alt="" >
-                        <img src="/images/clients/civisa.jpg" alt="" >
-                        <img src="/images/clients/dentsu.png" alt="" >
-                        <img src="/images/clients/abogadosdefamilia.png" alt="" >
+                        <% for(let i = 0 ; i < 30 ; i++) {%> 
+                            <img src="/images/logos/logo-<%= i+1 %>.png" alt="" >
+                        <% } %> 
+               
 
 
                     </div>

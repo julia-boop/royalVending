@@ -1207,7 +1207,7 @@ clients
 .clients-img img {
   object-fit: scale-down;
   margin: 10px;
-  max-width: 120px;
+  max-width: 175px;
   height: auto;
 }
 
