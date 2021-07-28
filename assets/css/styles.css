@@ -235,7 +235,7 @@ a.main-button-slider {
 }
 
 a.main-button-slider:hover {
-  background-color:#fdcece;
+  box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.2);
 }
 
 a.main-button {
@@ -291,7 +291,7 @@ a.main-button {
 }
 
 a.main-button:hover {
-  background-color: #584d4d;
+  box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.2);
 }
 
 button.main-button {
@@ -308,10 +308,50 @@ button.main-button {
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  background: rgb(224, 6, 6);
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(232, 6, 6, 1) 0%,
+    rgba(214, 50, 0, 1) 0%,
+    rgba(255, 91, 91, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right bottom,
+    color-stop(0%, rgba(232, 6, 6, 1)),
+    color-stop(0%, rgba(214, 50, 0, 1)),
+    color-stop(100%, rgba(255, 91, 91, 1)
+    )
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(232, 6, 6, 1) 0%,
+    rgba(214, 50, 0, 1) 0%,
+    rgba(255, 91, 91, 1) 100%
+  );
+  background: -o-linear-gradient(
+    -45deg,
+    rgba(232, 6, 6, 1) 0%,
+    rgba(214, 50, 0, 1) 0%,
+    rgba(255, 91, 91, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    -45deg,
+    rgba(232, 6, 6, 1) 0%,
+    rgba(214, 50, 0, 1) 0%,
+    rgba(255, 91, 91, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(232, 6, 6, 1) 0%,
+    rgba(214, 50, 0, 1) 0%,
+    rgba(255, 91, 91, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0088e8', endColorstr='#0088e8', GradientType=1 );
 }
 
 button.main-button:hover {
-  background-color: #584d4d;
+  box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.2);
 }
 
 .section-heading h2 {
@@ -792,7 +832,7 @@ TRY IT ... with or without CENTER CENTER
 
 .welcome-area .header-text h1 {
   font-weight: 400;
-  font-size: 64px;
+  font-size: 50px;
   line-height: 80px;
   letter-spacing: 1.4px;
   margin-bottom: 30px;
@@ -984,6 +1024,13 @@ about
   justify-content: center;
 }
 
+.about-btn-container{
+  margin: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 /* 
 ---------------------------------------------
 services
@@ -1054,10 +1101,8 @@ services
   }
 }
 
-.service-item:hover .icon,
-.service-item:hover a.main-button {
-  background-color: #584d4d;
-
+.service-item:hover .icon, .service-item:hover a.main-button {
+  box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.2);
 }
 
 .service-item .icon {
@@ -1072,7 +1117,7 @@ services
   margin: auto;
   position: relative;
   margin-bottom: 30px;
-  background-color: #ac0909;
+  background-color: rgb(224, 6, 6);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -1183,7 +1228,7 @@ accordions
   padding: 120px 0px;
 }
 
-#faqs .section-heading p {
+#faqs .section-heading h2 {
   margin-bottom: 80px;
 }
 
@@ -1227,6 +1272,11 @@ accordions
 .accordions {
   background-color: #f7f7f7;
 }
+
+.accordions h1 {
+  font-size: 20px;
+  font-weight: 300;
+}
 .accordion-head {
   padding: 20px;
   font-size: 20px;
@@ -1242,6 +1292,7 @@ accordions
 }
 .accordion-head .icon {
   float: right;
+  z-index: 3;
   transition: transform 200ms ease-in-out;
 }
 .accordion-head.is-open {
@@ -1317,6 +1368,13 @@ height: 100%;
   color: #1e1e1e;
   letter-spacing: 0.25px;
   line-height: 26px;
+}
+
+.contact-title{
+  padding-bottom: 45px;
+  font-size: 25px;
+  color: white;
+  font-weight: 400;
 }
 
 .contact-text {
