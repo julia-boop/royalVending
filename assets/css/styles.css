@@ -1031,6 +1031,28 @@ about
   justify-content: center;
 }
 
+.underline-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.dUnderline {
+  width: 50%;
+  background-image: linear-gradient(
+    135deg,
+    rgba(232, 6, 6, 1) 0%,
+    rgb(245, 135, 135) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 100%;
+  transition: background-size 0.25s ease-in;
+}
+.dUnderline:hover {
+  background-size: 100% 88%;
+}
+
 /* 
 ---------------------------------------------
 services
@@ -1093,6 +1115,7 @@ services
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   position: relative;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 920px) {
@@ -1623,6 +1646,29 @@ detail
   .detail-img, .detail-text{
     padding: 25px;
   }
+}
+
+/* 
+---------------------------------------------
+video
+--------------------------------------------- 
+*/
+
+.vid-main-container{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
+}
+
+.vid-container{
+  width: 100%;
+}
+
+.vid-container iframe{
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
 }
 
 

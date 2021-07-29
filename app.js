@@ -19,6 +19,10 @@ app.get('/equipos/detail/:id', (req, res) => {
     res.render('detail')
 })
 
+app.get('/quienesSomos', (req, res) => {
+    res.render('about')
+})
+
 
 app.listen(process.env.PORT || 3004, () => {
     console.log("El servidor esta corriendo...")
