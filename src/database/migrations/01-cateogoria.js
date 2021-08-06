@@ -10,9 +10,14 @@ module.exports = {
             autoIncrement:true
         },
         nombre: {
-            type: Sequelize.DataTypes.STRING(100),
-            allowNull:false
+          type: Sequelize.DataTypes.STRING(100),
+          allowNull:false
+        }, 
+        descripcion: {
+          type: Sequelize.DataTypes.TEXT,
+          allowNull:false
         }
+
     })
   },
 

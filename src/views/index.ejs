@@ -56,11 +56,9 @@ https://templatemo.com/tm-537-art-factory
                             <li class="submenu">
                                 <a href="#services">Nuestros Equipos</a>
                                 <ul>
-                                    <li><a href="/equipos/1">Bebidas Calientes</a></li>
-                                    <li><a href="/equipos/2">Bebidas Frias</a></li>
-                                    <li><a href="/equipos/3">Minibank</a></li>
-                                    <li><a href="/equipos/4">Snacks</a></li>
-                                    <li><a href="/equipos/5">Agua</a></li>
+                                    <% for(categoria of categorias) {%> 
+                                        <li><a href="/equipos/<%= categoria.id %>"><%= categoria.nombre %></a></li>
+                                    <% } %> 
                                 </ul>
                             </li>
                             <li class="scroll-to-section"><a href="#clients">Clientes</a></li>
@@ -223,6 +221,7 @@ https://templatemo.com/tm-537-art-factory
     <section class="section" id="services">
         <div class="container">
             <div class="row">
+                <h1>Nuestros Equipos</h1>
                 <div class="owl-carousel owl-theme">
                     <div class="item service-item">
                         <div class="icon">
@@ -230,7 +229,7 @@ https://templatemo.com/tm-537-art-factory
                         </div>
                         <h5 class="service-title">Bebidas Calientes</h5>
                         <p>El café en grano Santos Bourbon de Brasil, importado en crudo y tostado días previos al envío. Los productos solubles son provistos por Nestlé, y el azúcar es provista por Ledesma.</p>
-                        <a href="#" class="main-button">Ver Equipos</a>
+                        <a href="/equipos/1" class="main-button">Ver Equipos</a>
                     </div>
                     <div class="item service-item">
                         <div class="icon">
@@ -238,7 +237,7 @@ https://templatemo.com/tm-537-art-factory
                         </div>
                         <h5 class="service-title">Bebidas Frias</h5>
                         <p>Trabajamos con productos de primera calidad como Coca Cola, Smart Water, Aquarius, Powerade, Cepita y muchos más. </p>
-                        <a href="#" class="main-button">Ver Equipos</a>
+                        <a href="/equipos/2" class="main-button">Ver Equipos</a>
                     </div>
                     <div class="item service-item">
                         <div class="icon">
@@ -247,7 +246,7 @@ https://templatemo.com/tm-537-art-factory
                         <h5 class="service-title">MiniBank</h5>
                         <p>Otorgamos la mejor combinación de productos,calientes, fríos, snacks!
                         </p>
-                        <a href="#" class="main-button">Ver Equipos</a>
+                        <a href="/equipos/3" class="main-button">Ver Equipos</a>
                     </div>
                     <div class="item service-item">
                         <div class="icon">
@@ -256,7 +255,7 @@ https://templatemo.com/tm-537-art-factory
                         <h5 class="service-title">Snacks</h5>
                         <p>Ofrecemos gran variedad de productos de primeras marcas Cadbury, Cerealitas, Beldent, Oreo, Zafran, sandwiches Individuales, tartas y empanadas Don Antonio, entre otros.  
                         </p>
-                        <a href="#" class="main-button">Ver Equipos</a>
+                        <a href="/equipos/4" class="main-button">Ver Equipos</a>
                     </div>
                     <div class="item service-item">
                         <div class="icon">
@@ -265,7 +264,7 @@ https://templatemo.com/tm-537-art-factory
                         <h5 class="service-title">Agua</h5>
                         <p>Ofrecemos dispensers modernos, ofreciendo agua natural potable junto a Aqualine.
                         </p>
-                        <a href="#" class="main-button">Ver Equipos</a>
+                        <a href="/equipos/5" class="main-button">Ver Equipos</a>
                     </div>
                 </div>
             </div>
@@ -286,13 +285,13 @@ https://templatemo.com/tm-537-art-factory
                     </div>
                     <div class="offset-lg-3 col-lg-6">
                         <div class="section-heading">
-                            <p>Vivamus venenatis eu mi ac mattis. Maecenas ut elementum sapien. Nunc euismod risus ac lobortis congue. Sed erat quam.</p>
+                            <p>Empresas que confían en nosotros.</p>
                         </div>
                     </div>
                     <div class="clients-img">
 
-                        <% for(let i = 0 ; i < 30 ; i++) {%> 
-                            <img src="/images/logos/logo<%= i+1 %>.png" alt="" >
+                        <% for(cliente of clientes) {%> 
+                            <img src="<%= cliente.imagen %>" alt="" >
                         <% } %> 
                     </div>
                 </div>

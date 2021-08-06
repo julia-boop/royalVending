@@ -50,7 +50,9 @@ https://templatemo.com/tm-537-art-factory
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="/" class="active">Inicio</a></li>
-                            <li class="scroll-to-section"><a href="#contact-us">Contacto</a></li>
+                            <% if(typeof userLocal != 'undefined'){ %>
+                                <li class="scroll-to-section"><a href="/admin/logout">Cerrar Sesion</a></li>
+                            <% } %> 
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>

@@ -1,12 +1,34 @@
+const db = require('../database/models')
+
 module.exports = {
-    home: (req, res) => {
-        res.render('index')
+    home: async (req, res) => {
+        let categorias = await db.Categoria.findAll()
+        let clientes = await db.Cliente.findAll()
+
+        res.render('index', {categorias:categorias, clientes:clientes})
     },
     about: (req, res) => {
         res.render('about')
     }, 
-    equipo: (req, res) => {
-        res.render('equipos')
+    equipo: async (req, res) => {
+        let categoria = await db.Categoria.findByPk(req.params.id)
+        let categorias = await db.Categoria.findAll()
+
+        db.Equipo.findAll({
+            where: {
+                categoria_id : categoria.id
+            },
+            include: [
+                {
+                    association: 'categoria'
+                }
+            ]
+        },{
+            
+        })
+        .then((equipos) => {
+            res.render('equipos', {equipos:equipos, UnaCategoria:categoria, categorias:categorias})
+        })
     }, 
     detail: (req, res) => {
         res.render('detail')

@@ -1125,7 +1125,7 @@ services
 */
 #services {
   position: relative;
-  padding: 120px 0px 90px 0px;
+  padding: 100px 0px 90px 0px;
   background: rgb(224, 6, 6);
   background: -moz-linear-gradient(
     -45deg,
@@ -1166,6 +1166,15 @@ services
     rgba(255, 91, 91, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0088e8', endColorstr='#0088e8', GradientType=1 );
+}
+
+#services h1{
+  font-size: 48px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
 }
 
 .service-item {
@@ -1575,7 +1584,7 @@ height: 100%;
 
 .contact-form input,
 .contact-form textarea {
-  color: #777;
+  color: #fff;
   font-size: 14px;
   border: none;
   width: 100%;
@@ -1712,6 +1721,7 @@ equipos
 
 .equipos div{
   width: max-content;
+  height: 70vh;
   margin: 20px;
   border-radius: 5px;
   background-color: #eee;
@@ -1722,14 +1732,28 @@ equipos
 }
 
 .equipos div img {
-  width: 300px;
+  width: 100%;
+  height: 60%;
   border-radius: 5px;
   margin: 10px;
+  background-color: white;
 }
 
 .equipos div p{
   text-align: center;
   padding: 10px;
+}
+
+.equipos-section{
+  padding-top: 40px!important;
+}
+
+#equipos-heading h2{
+  margin-bottom: 40px!important;
+}
+
+#section-heading p {
+  margin-bottom: 20px;
 }
 
 /* 
@@ -1740,6 +1764,22 @@ detail
 
 #detail .detail-container{
   margin: 0px!important;
+}
+
+
+.detail-text img {
+  width: 270px !important;
+  margin:10px;
+  margin-top: 30px;
+}
+
+.detail-text div{
+  display: flex;
+  justify-content: center;
+}
+
+.detail-text h3{
+  margin-bottom: 15px;
 }
 
 #detail .detail-container img{
@@ -1754,6 +1794,7 @@ detail
 .detail-img, .detail-text{
   padding: 50px;
 }
+
 
 @media(max-width:580px){
   .detail-img{
@@ -1883,6 +1924,27 @@ admin equipos
   margin-bottom: 20px;
 }
 
+.contact-form select {
+  color: white;
+  font-size: 14px;
+  border: none;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-bottom: 30px;
+  background-color: rgba(250, 250, 250, 0.3);
+}
+
+.contact-form fieldset p {
+  color: white;
+  text-align: left;
+}
 /* 
 ---------------------------------------------
 preloader
