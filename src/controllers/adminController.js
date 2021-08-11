@@ -101,7 +101,7 @@ module.exports = {
             categoria_id : rb.categoria
         })
         .then((result) => {
-            res.send(result)
+            res.redirect('/admin/equipos')
         })
     }, 
     editarEquipo: async (req, res) => {
