@@ -1721,7 +1721,7 @@ equipos
 
 .equipos div{
   width: max-content;
-  height: 70vh;
+  height: 80vh;
   margin: 20px;
   border-radius: 5px;
   background-color: #eee;
@@ -1733,7 +1733,7 @@ equipos
 
 .equipos div img {
   width: 100%;
-  height: 60%;
+  height: 68%;
   border-radius: 5px;
   margin: 10px;
   background-color: white;

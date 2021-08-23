@@ -135,5 +135,25 @@ module.exports = {
         .then(() => {
             res.redirect('/admin/equipos')
         })
+    }, 
+    eliminarEquipo: (req, res) => {
+        db.Equipo.destroy({
+            where: {
+                id: req.params.id
+            }
+        })
+        .then(()=> {
+            res.redirect('/admin/equipos')
+        })
+    }, 
+    eliminarCliente: (req, res) => {
+        db.Cliente.destroy({
+            where: {
+                id: req.params.id
+            }
+        })
+        .then(() => {
+            res.redirect('/admin/clientes')
+        })
     }
 }
