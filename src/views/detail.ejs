@@ -84,8 +84,8 @@ https://templatemo.com/tm-537-art-factory
             <div class="container">
                 <div class="row">
                     <div class="left-text col-lg-12 col-md-12 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                        <h1><strong>Concerto</strong></h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor risus porttitor facilisis euismod.</p>
+                        <h1><strong><%= equipo.nombre %> </strong></h1>
+                        <p><%= equipo.dato1 %> </p>
                     </div>
                     <!-- <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
                         <img src="/images/slider-icon.png" class="rounded img-fluid d-block mx-auto" alt="First Vector Graphic">
@@ -103,12 +103,20 @@ https://templatemo.com/tm-537-art-factory
             <!-- ***** Section Title Start ***** -->
             <div class="row detail-container" >
                 <div class="col-lg-6 col-md-12 col-sm-12 detail-img">
-                    <img src="/images/equipos/equipo.jpeg" alt="">
+                    <img src="<%= equipo.imagen %> " alt="">
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 detail-text">
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quos nulla voluptate aspernatur unde sint explicabo aliquam veniam, delectus praesentium?</p>
+                    <h3><%= equipo.nombre %> </h3>
+                    <p><%= (equipo.dato1) ? equipo.dato1 : '' %> </p>
+                    <p><%= (equipo.dato2) ? equipo.dato2 : '' %> </p>
+                    <p><%= (equipo.dato3) ? equipo.dato3 : '' %> </p>
+                    <p><%= (equipo.dato4) ? equipo.dato4 : '' %> </p>
+                    <p><%= (equipo.dato5) ? equipo.dato5 : '' %> </p>
+                    <div >
+                        <img src="<%= equipo.ficha_tecnica %> " alt="">
+                    </div>
                 </div>
+                
             </div>
         </div>
     </section>

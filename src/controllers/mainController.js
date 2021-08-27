@@ -31,6 +31,13 @@ module.exports = {
         })
     }, 
     detail: (req, res) => {
-        res.render('detail')
+        db.Equipo.findByPk(req.params.id)
+        .then((equipo) => {
+            for(let i = 0 ; i < 5 ; i ++){
+                let dat = 'dato'+(i+1)
+                console.log(dat)
+            }
+            res.render('detail', {equipo:equipo})
+        })
     }
 }
