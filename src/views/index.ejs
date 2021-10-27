@@ -41,7 +41,7 @@ https://templatemo.com/tm-537-art-factory
     
     
     <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
+    <header class="header-area header-sticky index-header">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -78,7 +78,7 @@ https://templatemo.com/tm-537-art-factory
 
 
     <!-- ***** Welcome Area Start ***** -->
-    <div class="welcome-area" id="welcome">
+    <div class="welcome-area welcome-index" id="welcome">
 
         <!-- ***** Header Text Start ***** -->
         <div class="header-text">
@@ -288,11 +288,16 @@ https://templatemo.com/tm-537-art-factory
                             <p>Empresas que confían en nosotros.</p>
                         </div>
                     </div>
-                    <div class="clients-img">
+                    <div class="client-container">
+                        <div class="owl-carousel owl-theme">
+                            <% for(cliente of clientes) {%> 
+                                <div class="item client-item">
+                                    <img src="<%= cliente.imagen %>" alt="" >
+                                </div>
+                            <% } %> 
 
-                        <% for(cliente of clientes) {%> 
-                            <img src="<%= cliente.imagen %>" alt="" >
-                        <% } %> 
+                        </div>
+                     
                     </div>
                 </div>
                 <!-- ***** Section Title End ***** -->

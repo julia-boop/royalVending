@@ -44,7 +44,7 @@ module.exports = {
             imagen: rb.imagen
         })
         .then((cliente) => {
-            res.send(cliente)
+            res.redirect('/admin/clientes')
         })
     },
     editarCliente: (req, res) => {
