@@ -3,7 +3,7 @@ const router = express.Router();
 const adminController = require('../controllers/adminController')
 const hasAccess = require('../middlewares/adminAccess');
 
-router.get('/login', adminController.login);
+router.get('/a3hJBDCED2Qjzh9SHJ4FqEfs4iTY38K/login', adminController.login);
 router.post('/login', adminController.access);
 router.get('/logout', adminController.logout);
 router.get('/dashboard', hasAccess, adminController.dashboard);
